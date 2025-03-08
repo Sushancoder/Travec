@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Travec</title>
+    <title>Travec - A Travel Recommendation App</title>
+    <link rel="stylesheet" href="travec.css">
+    <style>
+        .about {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            color:white;
+        }
+
+        .about_title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .about_goals {
+            background: #0000007c;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .about_goals p {
+            font-size: 0.8rem;
+        }
+
+        .about_team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .team_member {
+            background: #0000007c;
+            padding: 1rem;
+            border-radius: 4px;
+            width: 180px;
+        }
+
+        .team_member img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .team_member h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .team_member p {
+            font-size: 0.7rem;
+            margin-bottom: 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img width="44" height="44" src="https://img.icons8.com/pastel-glyph/64/circumnavigation--v2.png" alt="circumnavigation--v2"/>
+        <ul class="navlinks">
+            <li><a href="travec.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="Type your destination">
+            <button class="search_but">Search</button>
+            <button class="search_reset">Clear</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="about">
+            <div class="about_title">
+                ABOUT US
+            </div>
+            <div class="about_goals">
+                <p>We are a travel company based in the heart of Bangkok, Thailand. We specialize in providing
+                    personalized travel experiences to our clients. Our team of experts is dedicated to crafting
+                    unique itineraries that cater to your specific needs and preferences. From luxury holidays to
+                    adventure travel, we have the expertise to make your travel dreams come true.</p>
+                <p>Our goal is to provide you with an unforgettable travel experience that will leave you with
+                    lasting memories. We strive to exceed your expectations and make your journey with us as
+                    enjoyable as possible.</p>
+
+            </div>
+            <div class="about_team">
+                <div class="team_member">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="team member">
+                    <h3>John Doe</h3>
+                    <p>Founder and CEO</p>
+                </div>
+                <div class="team_member">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="team member">
+                    <h3>Jane Doe</h3>
+                    <p>Co-Founder and CMO</p>
+                </div>
+                <div class="team_member">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="team member">
+                    <h3>Bob Smith</h3>
+                    <p>CTO</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="title">
+            <div class="socials">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img width="24" height="24" src="https://img.icons8.com/material/24/facebook-new.png"
+                        alt="facebook-new" />
+
+                </a>
+                <a href="https://www.x.com" target="_blank">
+                    <img width="24" height="24" src="https://img.icons8.com/material/24/twitter--v2.png"
+                        alt="twitter--v2" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img width="24" height="24" src="https://img.icons8.com/material/24/instagram-new--v1.png"
+                        alt="instagram-new--v1" />
+
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img width="24" height="24" src="https://img.icons8.com/material/24/linkedin--v1.png"
+                            alt="linkedin--v1" />
+
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
