@@ -12,11 +12,12 @@
             display: flex;
             flex-direction: column;
             padding: 2rem;
+            padding-top: 100px;
             color:white;
         }
 
         .about_title {
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: bold;
             color: white;
         }
@@ -29,7 +30,7 @@
         }
 
         .about_goals p {
-            font-size: 0.8rem;
+            font-size: 1.5rem;
         }
 
         .about_team {
@@ -43,12 +44,12 @@
             background: #0000007c;
             padding: 1rem;
             border-radius: 4px;
-            width: 180px;
+            width: 300px;
         }
 
         .team_member img {
             width: 100%;
-            height: 130px;
+            height: 250px;
             object-fit: cover;
             border-radius: 4px 4px 0 0;
         }
@@ -76,7 +77,7 @@
         </ul>
 
         <div class="search">
-            <input type="search" name="search" id="search" placeholder="Type your destination">
+            <input type="search" name="search" id="search" placeholder="Type your destination" autofocus>
             <button class="search_but">Search</button>
             <button class="search_reset">Clear</button>
         </div>
@@ -141,8 +142,12 @@
 
             </div>
         </div>
+
+        <div class="search_res">
+        </div>
     </main>
 
+    <script src="travec.js"></script>
 </body>
 
 </html>

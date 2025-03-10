@@ -5,18 +5,19 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-
 /* Navbar container */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #5b86b0;
+    /* background: #14137d; */
+    background-color: white;
     padding: 1rem 2rem;
-    position: sticky;
     top: 0;
     z-index: 1000;
-    height: 8vh;
+    height: 60px;
+    position: fixed;
+    width: 100%;
 }
 
 /* Navigation links */
@@ -27,14 +28,15 @@ nav {
 }
 
 .navlinks a {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
 }
 
 .navlinks a:hover {
-    background: #34495e;
+    background: #0400ff;;
+    color: white;
     border-radius: 4px;
 }
 
@@ -47,7 +49,6 @@ nav {
 
 #search {
     padding: 0.5rem 1rem;
-    border: none;
     border-radius: 4px;
     font-size: 1rem;
 }
@@ -67,7 +68,7 @@ nav {
 }
 
 .search_reset {
-    background: #3498db;
+    background: #0400ff;;
     color: white;
 }
 
@@ -76,15 +77,13 @@ nav {
 }
 
 .search_reset:hover {
-    background: #2980b9;
+    background: #14137d;
 }
-
-main {
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/4K-Travel-Wallpaper-HD-620x349.jpg");
+body{
+    background-image: url("https://images.pexels.com/photos/1654828/pexels-photo-1654828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
 }
 
 .socials {
@@ -96,6 +95,7 @@ main {
     flex-direction: column;
     gap: 1rem;
     margin-left: 2px;
+
 }
 
 .socials a {
@@ -105,7 +105,6 @@ main {
     padding-right: 1px;
     background: #ffffff;
     border-radius: 4px;
-    transition: all 0.3s ease;
     text-decoration: none;
 }
 
@@ -116,4 +115,58 @@ main {
 
 .socials a:hover {
     background: #e0e0e0;
+}
+
+
+
+.search_res {
+    position: absolute;
+    right: 100px;
+    top: 0px;
+    width: 500px;
+    max-height: 660px;
+    margin-top: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* border-radius: 10px; */
+}
+.search_elem{
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 6px 5px 3px rgb(54 50 72 / 80%);
+    
+}
+.res_img {
+    width: 500px;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.res_title{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.res_desc{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    height: 50px;
+}
+.res_but{
+    margin-left: 10px;
+    background-color: #0400ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.res_but:hover{
+    background-color: #14137d;
+    cursor: pointer;
 }

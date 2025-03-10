@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Travec</title>
     <title>Travec - A Travel Recommendation App</title>
     <link rel="stylesheet" href="travec.css">
     <style>
-        
         .intro {
             color: white;
             width: 50%;
@@ -16,20 +14,23 @@
         }
 
         .title_intro {
-            font-size: 3rem;
+            font-size: 5rem;
             font-weight: 700;
             margin-bottom: 1rem;
+            margin-top: 40px;
         }
 
         .desc {
             width: 70%;
-            font-size: 0.7rem;
+            font-size: 18px;
             margin-bottom: 2rem;
+            margin-top: 50px;
         }
 
         .book_now {
             padding: 1rem 2rem;
             border: none;
+            font-size: 15px;
             border-radius: 4px;
             background: #e74c3c;
             color: white;
@@ -37,29 +38,29 @@
         }
 
         .book_now:hover {
-            background: #c0392b;
+            background: #c0392b;    
         }
         </style>
 </head>
 
 <body>
     <nav>
-        <img width="44" height="44" src="https://img.icons8.com/pastel-glyph/64/circumnavigation--v2.png" alt="circumnavigation--v2"/>
-        <ul class="navlinks">
-            <li><a href="travec.html">Home</a></li>
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
+            <img width="44" height="44" src="https://img.icons8.com/pastel-glyph/64/circumnavigation--v2.png" alt="circumnavigation--v2"/>
+            <ul class="navlinks">
+                <li><a href="travec.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
 
         <div class="search">
-            <input type="search" name="search" id="search" placeholder="Type your destination">
+            <input type="search" name="search" id="search" placeholder="Type your destination" autofocus>
             <button class="search_but">Search</button>
             <button class="search_reset">Clear</button>
         </div>
     </nav>
 
     <main>
-        <div class="title">
+    <div class="title">
             <div class="intro">
                 <div class="title_intro">
                     <div class="intros">EXPLORE</div>
@@ -73,7 +74,7 @@
                     destination that captivates the heart and
                     ignites a sense of wonder.
                 </div>
-                <button class="book_now">Book Now</button>
+                <a href="contact_us.html"><button class="book_now">Book Now</button></a>
             </div>
 
                 <div class="socials">
@@ -100,7 +101,11 @@
 
             </div>
         </div>
+
+        <div class="search_res">
+        </div>
     </main>
+    <script src="travec.js"></script>
 
 </body>
 
